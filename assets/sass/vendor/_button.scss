@@ -1,0 +1,90 @@
+.btn-transparent {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  position: relative;
+  color: rgb(22, 136, 254);
+  font-weight: bold;
+  font-family: var(--font-regular);
+}
+
+.divider-border-dotted {
+  border-top: 1px dotted rgb(22, 136, 254);
+  border-bottom: 1px dotted rgb(22, 136, 254);
+  padding: 10px 0;
+}
+
+.btn {
+  .icon {
+    padding-right: 10px;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  &:visited {
+    outline: none;
+    box-shadow: none;
+  }
+  &:active {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.btn-back {
+  color: rgb(33, 150, 243);
+  width: auto;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  will-change: box-shadow;
+  // background: rgb(33, 150, 243);
+  background-color: transparent;
+  padding: 0;
+  border-width: 1px;
+  border-style: solid;
+  border-image: initial;
+  // padding: 0.7em 1.7em;
+  // padding: 16px 50px 14px 1.2em;
+  border-radius: 4px;
+  // border-color: rgb(33, 150, 243);
+  border: none;
+  font-weight: bold;
+  font-family: var(--font-bold);
+
+  .icon-right {
+    position: absolute;
+    margin-top: 1px;
+    right: 16px;
+
+    svg {
+      fill: white;
+    }
+  }
+
+  &:hover {
+    background-color: transparent;
+    border: none;
+    color: rgb(33, 150, 243);
+  }
+
+  &:focus {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+  }
+  &:active {
+    outline: none;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+  &:visited {
+    outline: none;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+}

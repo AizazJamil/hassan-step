@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form Validation</title>
+
+  <!-- styles -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/picker/datedropper.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <section class="wrapper_field">
+    <div class="container-fluid p-0">
+      <div class="row">
+        <div class="col-lg-6">
+          <div tabindex="0" class="form_content">
+            <div class="step_navHeader">
+              <div class="step_dividerBar"></div>
+
+              <div class="headerItem step-heading activeItem" data-id="step1">
+                <h4>Heading</h4>
+                <span class="dot"></span>
+              </div>
+              <div class="headerItem step-experience" data-id="step2">
+                <h4>Experience</h4>
+                <span class="dot"></span>
+              </div>
+              <div class="headerItem step-education" data-id="step3">
+                <h4>Education</h4>
+                <span class="dot"></span>
+              </div>
+              <div class="headerItem step-skills" data-id="step4">
+                <h4>Skills</h4>
+                <span class="dot"></span>
+              </div>
+              <div class="headerItem step-summary" data-id="step5">
+                <h4>Summary</h4>
+                <span class="dot"></span>
+              </div>
+              <div class="headerItem step-finalize" data-id="step6">
+                <h4>Finalize</h4>
+                <span class="dot"></span>
+              </div>
+            </div>
+            <div class="form-inner form-inner-step">
+              <!-- step one -->
+              <div class="step_heading step-content" id="step1">
+                <h4 class="head_sub">
+                  What's the <span>best way</span> for Employers to contact you?
+                </h4>
+                <p class="sub_title">We suggest including an email and phone number</p>
+
+                <form action="#" class="form-field" method="POST" id="headingForm" >
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="fname"><span>First Name</span></label>
+                        <input type="text" class="form-control" id="fname" placeholder="John">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="lname"><span>Last Name\</span></label>
+                        <input type="text" class="form-control" id="lname" placeholder="Doe">
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="address"><span>Address</span></label>
+                        <input type="text" class="form-control" id="address" placeholder="Enter a Location">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="city"><span>City</span></label>
+                        <input type="text" class="form-control" id="city" placeholder="San Francsico">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="pCode"><span>Postal Code</span></label>
+                        <input type="text" class="form-control" id="pCode" placeholder="94120">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="phone"><span>Phone</span></label>
+                        <input type="text" class="form-control" id="phone" placeholder="305-123-4444">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="email"><span>Email</span></label>
+                        <div class="form_field">
+                          <input type="text" class="form-control" id="email" placeholder="e.g mail@example.com" onkeydown="headingValidtion()">
+                          <div class="error-icon" id="errorIcon"><svg class="svg-error" width="24px" height="24px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M7,0 C3.13425,0 0,3.13425 0,7 C0,10.86575 3.13425,14 7,14 C10.86575,14 14,10.86575 14,7 C14,3.13425 10.86575,0 7,0 Z M7,11.4683333 C6.45283333,11.4683333 6.07833333,11.0465833 6.07833333,10.5 C6.07833333,9.93766667 6.46858333,9.53166667 7,9.53166667 C7.56175,9.53166667 7.92166667,9.93766667 7.92166667,10.5 C7.92166667,11.0471667 7.56175,11.4683333 7,11.4683333 Z M7.36283333,7.77058333 C7.22341667,8.246 6.78416667,8.25416667 6.63775,7.77058333 C6.46916667,7.21291667 5.87008333,5.096 5.87008333,3.72108333 C5.87008333,1.90691667 8.13983333,1.89816667 8.13983333,3.72108333 C8.13925,5.10416667 7.50808333,7.27591667 7.36283333,7.77058333 Z"></path></svg></div>
+                          <span class="error-feild" id="errorField"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                      <div class="form-group button-group step-button text-right">
+                        <button type="button" class="btn btn-primary btn-next next-step" id="buttonValidate" name="next">Next to Experience
+                          <span class="icon-right"><svg width="20" height="14" xmlns="http://www.w3.org/2000/svg" class="svg-right"><path d="M19.728 6.188L13.776.271a.934.934 0 00-1.315 0 .92.92 0 000 1.307l4.364 4.34H.93a.927.927 0 00-.93.924c0 .51.416.925.93.925h15.895l-4.364 4.339a.92.92 0 000 1.307.93.93 0 001.315 0l5.952-5.917a.92.92 0 000-1.308z" fill-rule="nonzero"></path></svg></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- //step one -->
+
+              <!-- step two -->
+              <div class="step_experience step-content out" id="step2">
+                <h4 class="head_sub">
+                  Please capture your Experience
+                </h4>
+                <p class="sub_title">We suggest including an email and phone number</p>
+
+                <div class="add_button divider-border-dotted mt-4">
+                  <button type="button" class="btn btn-default add-experience btn-transparent btn-border"><span class="icon"><i class="fa fa-plus-circle"></i></span> Add Employment</button>
+                </div>
+
+                <form action="#" class="form-field experience-field-form experienceForm-field-none" method="POST" id="headingForm" >
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="e_employer"><span>Employer</span></label>
+                        <select name="e_employer" id="e_employer" class="form-control">
+                          <option value="default">Select Employer</option>
+                          <option value="bps">Module BPS</option>
+                          <option value="item2">Item 2</option>
+                          <option value="item3">Item 3</option>
+                          <option value="item4">Item 4</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="e_client"><span>Client</span></label>
+                        <select name="e_industry" id="e_industry" class="form-control">
+                          <option value="default">Select Client</option>
+                          <option value="absa">Absa Group</option>
+                          <option value="item2">Item 2</option>
+                          <option value="item3">Item 3</option>
+                          <option value="item4">Item 4</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="e_project"><span>Project</span></label>
+                        <input type="text" class="form-control" id="e_project" placeholder="Enter a Location">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="e_industry"><span>Industry</span></label>
+                        <select name="e_industry" id="e_industry" class="form-control">
+                          <option value="default">Select Industry</option>
+                          <option value="banking">Banking</option>
+                          <option value="item2">Item 2</option>
+                          <option value="item3">Item 3</option>
+                          <option value="item4">Item 4</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="e_technology"><span>Technology</span></label>
+                        <input type="text" class="form-control" id="e_technology" placeholder="Webmethods, ARIS, Oracle">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="e_role"><span>Job Role/Title</span></label>
+                        <input type="text" class="form-control" id="e_role" placeholder="Program Manager, Solution Architect">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                          <div class="form-group">
+                            <label for="e_startDate"><span>Start Date</span></label>
+                            <input type="text" class="form-control" id="e_startDate" placeholder="Start Date">
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                          <div class="form-group">
+                            <label for="e_endDate"><span>End Date</span></label>
+                            <input type="text" class="form-control" id="e_endDate" placeholder="End Date">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="e_project"><span>Project Value</span></label>
+                        <input type="text" class="form-control" id="e_project" placeholder="Undisclosed">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-5">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">I currently work here</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                      <div class="form-group button-group step-button d-flex justify-content-between">
+                        <button type="button" class="btn btn-back" name="prev">
+                          Back
+                        </button>
+                        <button type="button" class="btn btn-primary btn-next next-step" id="buttonValidate">Next to Experience
+                          <span class="icon-right"><svg width="20" height="14" xmlns="http://www.w3.org/2000/svg" class="svg-right"><path d="M19.728 6.188L13.776.271a.934.934 0 00-1.315 0 .92.92 0 000 1.307l4.364 4.34H.93a.927.927 0 00-.93.924c0 .51.416.925.93.925h15.895l-4.364 4.339a.92.92 0 000 1.307.93.93 0 001.315 0l5.952-5.917a.92.92 0 000-1.308z" fill-rule="nonzero"></path></svg></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- //step two -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- javacript -->
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/step.js"></script>
+  <script src="assets/picker/datedropper.min.js"></script>
+
+
+  <script type="text/javascript">
+    // function headingValidtion() {
+    //   var form = document.getElementById('headingForm');
+    //   var email = document.getElementById('email').value;
+    //   var errorField = document.getElementById('errorField');
+    //   var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    //
+    //   if(email.match(pattern)) {
+    //     form.classList.add("valid");
+    //     form.classList.remove("invalid");
+    //     errorField.innerHTML = "Perfect!";
+    //     errorField.style.color = "#00ff00";
+    //     document.getElementById('email').style.border = "2px solid #00ff00";
+    //     document.getElementById('errorIcon').style.opacity = '0';
+    //   } else {
+    //     form.classList.add("invalid");
+    //     form.classList.remove("valid");
+    //     errorField.innerHTML = "Please enter valid email address";
+    //     errorField.style.color = "rgb(255, 45, 45)";
+    //     document.getElementById('email').style.border = "2px solid rgb(255, 45, 45)";
+    //     document.getElementById('errorIcon').style.opacity = '1';
+    //   }
+    //
+    //   if (email == "") {
+    //     form.classList.remove("invalid");
+    //     form.classList.remove("valid");
+    //     errorField.innerHTML = "Please enter your email address";
+    //     errorField.style.color = "rgb(255, 45, 45)";
+    //     document.getElementById('email').style.border = "2px solid rgb(255, 45, 45)";
+    //   }
+    // }
+    //
+    // $("#buttonValidate").on("click", headingValidtion);
+
+    // Date Picker
+    $('#e_startDate').dateDropper();
+    $('#e_endDate').dateDropper();
+  </script>
+</body>
+
+</html>
