@@ -1,4 +1,4 @@
-// see https://css-tricks.com/forums/topic/back-button-on-multistep-form/
+// Step Form Multiple
 $(function() {
   var step = 0;
   var stepItem = $('.step_navHeader .headerItem');
