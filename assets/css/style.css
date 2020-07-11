@@ -250,6 +250,42 @@ input, select {
   box-shadow: none;
 }
 
+.btn-next {
+  color: white;
+  width: auto;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  will-change: box-shadow;
+  background: #2196f3;
+  border-width: 1px;
+  border-style: solid;
+  border-image: initial;
+  padding: 16px 50px 14px 1.2em;
+  border-radius: 4px;
+  border-color: #2196f3;
+  font-weight: bold;
+  font-family: var(--font-bold);
+}
+.btn-next .icon-right {
+  position: absolute;
+  margin-top: 1px;
+  right: 30px;
+}
+.btn-next .icon-right svg {
+  fill: white;
+}
+.btn-next:hover {
+  background: #016fe0;
+  border-color: #016fe0;
+}
+.btn-next:focus {
+  outline: none;
+  background: #016fe0;
+  border-color: #016fe0;
+  box-shadow: none;
+}
+
 @font-face {
   font-family: "Gilroy-Regular";
   src: url("../fonts/gilroy/Gilroy-Regular.ttf");
