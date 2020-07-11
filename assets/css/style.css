@@ -165,6 +165,10 @@ input, select {
     padding-left: 20px !important;
   }
 }
+.border-form {
+  border: 2px solid #1688fe !important;
+}
+
 .btn-transparent {
   background-color: transparent;
   border: none;
@@ -285,6 +289,8 @@ input, select {
   background-color: #f7f7fc;
   padding: 10px 0 0 0;
   height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 .wrapper_field .form_content .form-inner {
   padding: 2.5em;
@@ -329,8 +335,46 @@ input, select {
 .wrapper_field .form_content .form-field .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
   background-color: #1688fe;
 }
+.wrapper_field .form_content .form-field .preview-imageUpload {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+.wrapper_field .form_content .form-field .preview-imageUpload .profile {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+.wrapper_field .form_content .form-field .preview-imageUpload .profile img {
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+}
+.wrapper_field .form_content .form-field .preview-imageUpload .profile #previewProfileUpload {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrapper_field .form_content .form-field .preview-imageUpload .uploadButton {
+  flex: 0 0 80%;
+  max-width: 80%;
+}
 .wrapper_field .form_content .form-field .form-group {
   position: relative;
+  /*****************************************
+    upload button styles
+  ******************************************/
 }
 .wrapper_field .form_content .form-field .form-group label {
   display: block;
@@ -348,6 +392,47 @@ input, select {
   text-transform: uppercase;
   padding: 0px 5px;
   background: #f7f7fc;
+}
+.wrapper_field .form_content .form-field .form-group .info_title {
+  font-size: 0.8125em;
+  font-weight: normal;
+  font-family: var(--font-regular);
+  color: #000;
+  position: relative;
+  text-align: left;
+  line-height: 22px;
+}
+.wrapper_field .form_content .form-field .form-group .file-upload {
+  position: relative;
+  display: inline-block;
+  height: 8px;
+}
+.wrapper_field .form_content .form-field .form-group .file-upload__label {
+  display: block;
+  color: #000;
+  background: transparent;
+  border-radius: 0.4em;
+  transition: background 0.3s;
+  position: relative;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  text-align: left;
+  left: 0;
+}
+.wrapper_field .form_content .form-field .form-group .file-upload__label:hover {
+  cursor: pointer;
+  background: transparent;
+}
+.wrapper_field .form_content .form-field .form-group .file-upload__input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 1;
+  width: 0;
+  height: 100%;
+  opacity: 0;
 }
 .wrapper_field .form_content .form-field .form-group .form-control {
   position: relative;
@@ -483,6 +568,7 @@ input, select {
   font-size: 13px;
   color: #7171a6;
   cursor: default;
+  text-transform: uppercase;
 }
 .wrapper_field .step_navHeader .headerItem .dot {
   width: 10px;
@@ -502,6 +588,17 @@ input, select {
   display: block;
   position: relative;
   top: 2px;
+  z-index: 2;
+}
+.wrapper_field .step_navHeader .headerItem .divider {
+  width: 100%;
+  height: 2px;
+  background-color: #e6e6ff;
+  position: absolute;
+  left: 0px;
+  top: 30px;
+  border-radius: 100px;
+  z-index: 1;
 }
 .wrapper_field .step_navHeader .activeItem h4 {
   margin-bottom: 9px;
@@ -509,6 +606,15 @@ input, select {
   font-size: 13px;
   color: #1688fe;
   cursor: pointer;
+}
+.wrapper_field .step_navHeader .activeItem .divider:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0px;
+  width: 100%;
+  background-color: #1688fe;
+  border-radius: 100px;
 }
 .wrapper_field .step_navHeader .activeItem .dot:nth-child(2) {
   width: 10px;
@@ -533,7 +639,31 @@ input, select {
 .wrapper_field .experienceForm-field-block {
   display: block !important;
 }
+.wrapper_field .educationForm-field-none {
+  display: none !important;
+}
+.wrapper_field .educationForm-field-block {
+  display: block !important;
+}
+.wrapper_field .skillForm-field-block {
+  display: none !important;
+}
+.wrapper_field .skillForm-field-block {
+  display: block !important;
+}
+.wrapper_field .summaryForm-field-block {
+  display: block !important;
+}
+.wrapper_field .summaryForm-field-block {
+  display: block !important;
+}
 .wrapper_field .add-experience-none {
+  display: none !important;
+}
+.wrapper_field .add-education-none {
+  display: none !important;
+}
+.wrapper_field .add-skill-none {
   display: none !important;
 }
 

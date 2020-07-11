@@ -2,6 +2,8 @@
   background-color: rgb(247, 247, 252);
   padding: 10px 0 0 0;
   height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
 
   .form-inner {
     padding: em(40px);
@@ -52,6 +54,38 @@
       background-color: rgb(22, 136, 254);
     }
 
+    .preview-imageUpload {
+      @include flexbox();
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-start;
+      position: relative;
+
+      .profile {
+        flex: 0 0 20%;
+        max-width: 20%;
+
+        img {
+          width: 50px;
+          height: 50px;
+          @include border-radius(100px);
+        }
+        #previewProfileUpload {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+      }
+
+      .uploadButton {
+        flex: 0 0 80%;
+        max-width: 80%;
+      }
+    }
+
     .form-group {
       position: relative;
       label {
@@ -70,6 +104,56 @@
         text-transform: uppercase;
         padding: 0px 5px;
         background: rgb(247, 247, 252);
+      }
+
+      .info_title {
+        font-size: em(13px);
+        font-weight: normal;
+        font-family: var(--font-regular);
+        color: #000;
+        position: relative;
+        text-align: left;
+        line-height: 22px;
+      }
+
+      /*****************************************
+        upload button styles
+      ******************************************/
+      .file-upload {
+      	position: relative;
+      	display: inline-block;
+        height: 8px;
+      }
+
+      .file-upload__label {
+        display: block;
+        // padding: 1em 2em;
+        color: #000;
+        background: transparent;
+        border-radius: .4em;
+        transition: background .3s;
+        position: relative;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        text-align: left;
+        left: 0;
+
+        &:hover {
+           cursor: pointer;
+           background: transparent;
+        }
+      }
+
+      .file-upload__input {
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          font-size: 1;
+          width:0;
+          height: 100%;
+          opacity: 0;
       }
 
 
@@ -220,6 +304,7 @@
       font-size: 13px;
       color: rgb(113, 113, 166);
       cursor: default;
+      text-transform: uppercase;
     }
     .dot {
       width: 10px;
@@ -239,6 +324,18 @@
       display: block;
       position: relative;
       top: 2px;
+      z-index: 2;
+    }
+
+    .divider {
+      width: 100%;
+      height: 2px;
+      background-color: rgb(230, 230, 255);
+      position: absolute;
+      left: 0px;
+      top: 30px;
+      border-radius: 100px;
+      z-index: 1;
     }
   }
 
@@ -249,6 +346,18 @@
       font-size: 13px;
       color: rgb(22, 136, 254);
       cursor: pointer;
+    }
+
+    .divider {
+      &:after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        left: 0px;
+        width: 100%;
+        background-color: rgb(22, 136, 254);
+        border-radius: 100px;
+      }
     }
 
     .dot {
@@ -273,6 +382,8 @@
   }
 }
 
+
+// Experience
 .experienceForm-field-none {
   display: none !important;
 }
@@ -281,6 +392,41 @@
   display: block !important;
 }
 
+// Education
+.educationForm-field-none {
+  display: none !important;
+}
+
+.educationForm-field-block {
+  display: block !important;
+}
+
+// Skills
+.skillForm-field-block {
+  display: none !important;
+}
+
+.skillForm-field-block {
+  display: block !important;
+}
+
+// Skills
+.summaryForm-field-block {
+  display: block !important;
+}
+
+.summaryForm-field-block {
+  display: block !important;
+}
+
 .add-experience-none {
+  display: none !important;
+}
+
+.add-education-none {
+  display: none !important;
+}
+
+.add-skill-none {
   display: none !important;
 }

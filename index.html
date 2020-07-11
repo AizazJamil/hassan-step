@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/picker/datedropper.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=1.0">
 </head>
 
 <body>
@@ -22,31 +22,37 @@
         <div class="col-lg-6">
           <div tabindex="0" class="form_content">
             <div class="step_navHeader">
-              <div class="step_dividerBar"></div>
+              <!-- <div class="step_dividerBar"></div> -->
 
               <div class="headerItem step-heading activeItem" data-id="step1">
                 <h4>Heading</h4>
                 <span class="dot"></span>
+                <span class="divider"></span>
               </div>
               <div class="headerItem step-experience" data-id="step2">
                 <h4>Experience</h4>
                 <span class="dot"></span>
+                <span class="divider"></span>
               </div>
               <div class="headerItem step-education" data-id="step3">
                 <h4>Education</h4>
                 <span class="dot"></span>
+                <span class="divider"></span>
               </div>
               <div class="headerItem step-skills" data-id="step4">
                 <h4>Skills</h4>
                 <span class="dot"></span>
+                <span class="divider"></span>
               </div>
               <div class="headerItem step-summary" data-id="step5">
                 <h4>Summary</h4>
                 <span class="dot"></span>
+                <span class="divider"></span>
               </div>
               <div class="headerItem step-finalize" data-id="step6">
                 <h4>Finalize</h4>
                 <span class="dot"></span>
+                <span class="divider"></span>
               </div>
             </div>
             <div class="form-inner form-inner-step">
@@ -217,7 +223,7 @@
                         <button type="button" class="btn btn-back" name="prev">
                           Back
                         </button>
-                        <button type="button" class="btn btn-primary btn-next next-step" id="buttonValidate">Next to Experience
+                        <button type="button" class="btn btn-primary btn-next next-step" name="next">Next to Experience
                           <span class="icon-right"><svg width="20" height="14" xmlns="http://www.w3.org/2000/svg" class="svg-right"><path d="M19.728 6.188L13.776.271a.934.934 0 00-1.315 0 .92.92 0 000 1.307l4.364 4.34H.93a.927.927 0 00-.93.924c0 .51.416.925.93.925h15.895l-4.364 4.339a.92.92 0 000 1.307.93.93 0 001.315 0l5.952-5.917a.92.92 0 000-1.308z" fill-rule="nonzero"></path></svg></span>
                         </button>
                       </div>
@@ -226,6 +232,253 @@
                 </form>
               </div>
               <!-- //step two -->
+
+              <!-- step three -->
+              <div class="step_education step-content out" id="step3">
+                <h4 class="head_sub">
+                  Please capture your Education
+                </h4>
+                <p class="sub_title">Start with your recent Tertiary eduction</p>
+
+                <div class="add_button divider-border-dotted mt-4">
+                  <button type="button" class="btn btn-default add-education btn-transparent btn-border"><span class="icon"><i class="fa fa-plus-circle"></i></span> Add Education</button>
+                </div>
+
+                <form action="#" class="form-field education-field-form experienceForm-field-none" method="POST" id="headingForm" >
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="e_institution"><span>Institution</span></label>
+                        <input type="text" class="form-control" id="e_institution" placeholder="Cape University">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="e_course"><span>Degree/Course</span></label>
+                        <input type="text" class="form-control" id="e_course" placeholder="Higher Diploma in Financial Information">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="e_industry"><span>Graduation Date</span></label>
+                        <select name="e_industry" id="e_industry" class="form-control">
+                          <option value="default">Select Date</option>
+                          <option value="1995">1995</option>
+                          <option value="1996">1996</option>
+                          <option value="1997">1997</option>
+                          <option value="1998">1998</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="e_description"><span>Description</span></label>
+                        <textarea name="description" id="e_description" cols="30" rows="4" class="form-control"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                      <div class="form-group button-group step-button d-flex justify-content-between">
+                        <button type="button" class="btn btn-back" name="prev">
+                          Back
+                        </button>
+                        <button type="button" class="btn btn-primary btn-next next-step" name="next">Next to Experience
+                          <span class="icon-right"><svg width="20" height="14" xmlns="http://www.w3.org/2000/svg" class="svg-right"><path d="M19.728 6.188L13.776.271a.934.934 0 00-1.315 0 .92.92 0 000 1.307l4.364 4.34H.93a.927.927 0 00-.93.924c0 .51.416.925.93.925h15.895l-4.364 4.339a.92.92 0 000 1.307.93.93 0 001.315 0l5.952-5.917a.92.92 0 000-1.308z" fill-rule="nonzero"></path></svg></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- //step three -->
+
+              <!-- step four -->
+              <div class="step_education step-content out" id="step4">
+                <h4 class="head_sub">
+                  Please capture your Skills
+                </h4>
+                <p class="sub_title">Start with the skill/competency you are most experienced at</p>
+
+                <div class="add_button divider-border-dotted mt-4">
+                  <button type="button" class="btn btn-default add-skill btn-transparent btn-border"><span class="icon"><i class="fa fa-plus-circle"></i></span> Add Skill/competencies</button>
+                </div>
+
+                <form action="#" class="form-field skill-field-form experienceForm-field-none" method="POST" id="headingForm" >
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <div class="form-group">
+                        <label for="s_skill"><span>Skill/Competency Category</span></label>
+                        <select name="s_skill" id="s_skill" class="form-control">
+                          <option value="default">Select Skill</option>
+                          <option value="tool">Tool</option>
+                          <option value="tool1">Tool 2</option>
+                          <option value="tool2">Tool 3</option>
+                          <option value="tool3">Tool 4</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <div class="form-group">
+                        <label for="s_competence"><span>Skill/Competence</span></label>
+                        <input type="text" class="form-control" id="s_competence" placeholder="Dos">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="s_level"><span>Skill Level %</span></label>
+                        <input type="text" class="form-control" id="s_level" placeholder="Dos">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="s_spectrum"><span>Skill Spectrum %</span></label>
+                        <input type="text" class="form-control" id="s_spectrum" placeholder="0-100">
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                      <div class="form-group button-group step-button d-flex justify-content-between">
+                        <button type="button" class="btn btn-back" name="prev">
+                          Back
+                        </button>
+                        <button type="button" class="btn btn-primary btn-next next-step" name="next">Next to Experience
+                          <span class="icon-right"><svg width="20" height="14" xmlns="http://www.w3.org/2000/svg" class="svg-right"><path d="M19.728 6.188L13.776.271a.934.934 0 00-1.315 0 .92.92 0 000 1.307l4.364 4.34H.93a.927.927 0 00-.93.924c0 .51.416.925.93.925h15.895l-4.364 4.339a.92.92 0 000 1.307.93.93 0 001.315 0l5.952-5.917a.92.92 0 000-1.308z" fill-rule="nonzero"></path></svg></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- //step four -->
+
+              <!-- step five -->
+              <div class="step_education step-content out" id="step5">
+                <h4 class="head_sub">
+                  Please capture your Professional summary
+                </h4>
+                <p class="sub_title">The first sentence usually capture the audience</p>
+
+                <!-- <div class="add_button divider-border-dotted mt-4">
+                  <button type="button" class="btn btn-default add-skill btn-transparent btn-border"><span class="icon"><i class="fa fa-plus-circle"></i></span> Add Skill/competencies</button>
+                </div> -->
+
+                <form action="#" class="form-field summary-field-form " method="POST" id="summaryForm" >
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <div class="form-group border-form p-3">
+                        <label for="s_skill"><span>Skill/Competency Category</span></label>
+                        <p class="info_title">Bringing people together. Providing talent. Supporting teams. Creating great things.
+In my life as a solutions architect, business analyst, system analyst, project manager, program manager I came to a realisation that in the fast moving world, a frequent assessment and adaptation of plans is required to deliver usable and fit for purpose components, and that’s how I got interested in agile software development – especially in Scrum.
+With this new-found knowledge, I started supporting my team by allowing them to find their own innovative rhythm and know that not one size fits all. It’s always an exciting experience to see how teams can outgrow themselves. I love sharing my passion with others. If I choose a project, I’m all in, and my motivation easily infects others to achieve a common goal.
+The method is second place, but needs to be a good fit with the team. Next to Scrum, Kanban and attention to detail also provide amazing results.
+When someone chooses to work with me, they are bringing a strong contender to the table – and ensuring to synergise for continuous improvement. I see it as my job to move the team forward and to protect it from negative influences. In the process, things can get uncomfortable, but with a lot of perseverance, the team, management, always come together as one, find effective compromises, and deliver excellent results.
+I make things happen!!!
+</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                      <div class="form-group button-group step-button d-flex justify-content-between">
+                        <button type="button" class="btn btn-back" name="prev">
+                          Back
+                        </button>
+                        <button type="button" class="btn btn-primary btn-next next-step" name="next">Next to Experience
+                          <span class="icon-right"><svg width="20" height="14" xmlns="http://www.w3.org/2000/svg" class="svg-right"><path d="M19.728 6.188L13.776.271a.934.934 0 00-1.315 0 .92.92 0 000 1.307l4.364 4.34H.93a.927.927 0 00-.93.924c0 .51.416.925.93.925h15.895l-4.364 4.339a.92.92 0 000 1.307.93.93 0 001.315 0l5.952-5.917a.92.92 0 000-1.308z" fill-rule="nonzero"></path></svg></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- //step five -->
+
+              <!-- step six -->
+              <div class="step_education step-content out" id="step6">
+                <h4 class="head_sub">
+                  Personal Information
+                </h4>
+
+                <form action="#" class="form-field finalize-field-form" method="POST" id="headingForm" >
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <div class="form-group">
+                        <label for="f_job"><span>Job/Title</span></label>
+                        <input type="text" class="form-control" id="f_job" placeholder="Solution Architect">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <div class="form-group preview-imageUpload">
+                        <div class="profile">
+                          <!-- <img src="assets/images/profile/avatar.png" class="img-fluid previewAvatar" id="previewProfileUpload" alt=""> -->
+                          <div id="previewProfileUpload" style="background-image: url(assets/images/profile/avatar.png);">
+                          </div>
+                        </div>
+                        <div class="file-upload uploadButton">
+                          <label for="imageUpload" class="file-upload__label">Upload Image</label>
+                          <input id="imageUpload" class="file-upload__input" type="file" name="file-upload">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <div class="form-group">
+                        <label for="f_firstname"><span>First Name</span></label>
+                        <input type="text" class="form-control" id="f_firstname" placeholder="Marius">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="f_lastname"><span>Last Name</span></label>
+                        <input type="text" class="form-control" id="f_lastname" placeholder="van Graan">
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="f_address"><span>Address</span></label>
+                        <input type="text" class="form-control" id="f_address" placeholder="Gauteng">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="f_city"><span>City</span></label>
+                        <input type="text" class="form-control" id="f_city" placeholder="Kempton Park">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="f_code"><span>Postal Code</span></label>
+                        <input type="text" class="form-control" id="f_code" placeholder="1619">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="f_phone"><span>Phone</span></label>
+                        <input type="text" class="form-control" id="f_phone" placeholder="0791705511">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="f_email"><span>Email</span></label>
+                        <input type="text" class="form-control" id="f_email" placeholder="marius@modusbps.com">
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="f_summary"><span>Summary</span></label>
+                        <textarea name="description" id="f_summary" cols="30" rows="4" class="form-control"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                      <div class="form-group button-group step-button d-flex justify-content-between">
+                        <button type="button" class="btn btn-back" name="prev">
+                          Back
+                        </button>
+                        <button type="button" class="btn btn-primary btn-next next-step" name="next">Next to Experience
+                          <span class="icon-right"><svg width="20" height="14" xmlns="http://www.w3.org/2000/svg" class="svg-right"><path d="M19.728 6.188L13.776.271a.934.934 0 00-1.315 0 .92.92 0 000 1.307l4.364 4.34H.93a.927.927 0 00-.93.924c0 .51.416.925.93.925h15.895l-4.364 4.339a.92.92 0 000 1.307.93.93 0 001.315 0l5.952-5.917a.92.92 0 000-1.308z" fill-rule="nonzero"></path></svg></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- //step six -->
+
             </div>
           </div>
         </div>
@@ -238,7 +491,7 @@
   <script src="assets/js/jquery-3.4.1.min.js"></script>
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/step.js"></script>
+  <script src="assets/js/step.js?v=1.0"></script>
   <script src="assets/picker/datedropper.min.js"></script>
 
 
