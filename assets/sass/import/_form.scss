@@ -430,3 +430,106 @@
 .add-skill-none {
   display: none !important;
 }
+
+.divider-border-dotted-none {
+  display: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+
+// Form Accordion Step by step
+.myaccordion {
+  max-width: 100%;
+  // margin: 50px auto;
+  // box-shadow: 0 0 1px rgba(0,0,0,0.1);
+  .card {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+
+    .card-body {
+      padding: 0;
+    }
+  }
+}
+
+// .myaccordion .card,
+// .myaccordion .card:last-child .card-header {
+//   border: none;
+// }
+
+.myaccordion .card-header {
+  border-bottom: none;
+  border-top: 1px solid rgb(230, 230, 255);
+  background: transparent;
+  padding-right: 0;
+  padding-left: 0;
+  &:last-of-type {
+    border-top: 1px solid rgb(230, 230, 255);
+  }
+
+  .icon_group {
+    .delete-stack {
+      opacity: 0;
+      @include transition(0.24s ease);
+      svg {
+        fill: rgb(22, 136, 254);
+      }
+    }
+  }
+
+  &:hover {
+    .btn {
+      color: rgb(22, 136, 254);
+    }
+
+    .fa-stack {
+      .fa {
+        color: rgb(22, 136, 254);
+      }
+    }
+
+    .icon_group {
+      .delete-stack {
+        opacity: 1;
+        @include transition(0.24s ease);
+      }
+    }
+  }
+}
+
+.myaccordion .fa-stack {
+  font-size: 13px;
+  color: rgb(113, 113, 166);
+  line-height: 1.4;
+
+  .fa {
+    color: rgb(113, 113, 166);
+  }
+}
+
+.myaccordion .btn-link {
+  width: 100%;
+  font-weight: bold;
+  font-family: var(--font-bold);
+  padding: 0;
+  font-size: 13px;
+  color: rgb(113, 113, 166);
+  padding-right: 0;
+  padding-left: 0;
+
+  .btn-delete {
+    background-color: transparent;
+    padding: 0;
+  }
+}
+
+.myaccordion .btn-link:hover,
+.myaccordion .btn-link:focus {
+  text-decoration: none;
+}
+
+.myaccordion li + li {
+  margin-top: 10px;
+}

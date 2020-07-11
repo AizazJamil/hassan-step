@@ -65,8 +65,9 @@ const dividerBar = document.querySelector('.divider-border-dotted');
 
 experienceFormButton.addEventListener('click', () => {
   experienceForm.classList.add('experienceForm-field-block');
-  experienceFormButton.classList.add('add-experience-none');
-  dividerBar.style.display = 'none';
+  // experienceFormButton.classList.add('add-experience-none');
+  // dividerBar.style.display = 'none';
+  // dividerBar.classList.add('divider-border-dotted-none');
 })
 
 
@@ -77,8 +78,9 @@ const educationFormButton = document.querySelector('.add-education');
 
 educationFormButton.addEventListener('click', () => {
   educationForm.classList.add('educationForm-field-block');
-  educationFormButton.classList.add('add-education-none');
-  dividerBar.style.display = 'none';
+  // educationFormButton.classList.add('add-education-none');
+  // dividerBar.style.display = 'none';
+  // dividerBar.classList.add('divider-border-dotted-none');
 })
 
 // Skill Form Show and Hide Code here.
@@ -88,8 +90,9 @@ const skillFormButton = document.querySelector('.add-skill');
 
 skillFormButton.addEventListener('click', () => {
   skillForm.classList.add('skillForm-field-block');
-  skillFormButton.classList.add('add-skill-none');
-  dividerBar.style.display = 'none';
+  // skillFormButton.classList.add('add-skill-none');
+  // dividerBar.style.display = 'none';
+  // dividerBar.classList.add('divider-border-dotted-none');
 })
 
 
@@ -107,4 +110,13 @@ function imageProfilePreview(input) {
 }
 $("#imageUpload").change(function() {
     imageProfilePreview(this);
+});
+
+
+// Form Accordion step by step
+$("#accordion").on("hide.bs.collapse show.bs.collapse", e => {
+  $(e.target)
+    .prev()
+    .find("i:last-child")
+    .toggleClass("fa-chevron-up fa-chevron-down");
 });

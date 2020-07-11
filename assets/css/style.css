@@ -666,5 +666,85 @@ input, select {
 .wrapper_field .add-skill-none {
   display: none !important;
 }
+.wrapper_field .divider-border-dotted-none {
+  display: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+}
+.wrapper_field .myaccordion {
+  max-width: 100%;
+}
+.wrapper_field .myaccordion .card {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+.wrapper_field .myaccordion .card .card-body {
+  padding: 0;
+}
+.wrapper_field .myaccordion .card-header {
+  border-bottom: none;
+  border-top: 1px solid #e6e6ff;
+  background: transparent;
+  padding-right: 0;
+  padding-left: 0;
+}
+.wrapper_field .myaccordion .card-header:last-of-type {
+  border-top: 1px solid #e6e6ff;
+}
+.wrapper_field .myaccordion .card-header .icon_group .delete-stack {
+  opacity: 0;
+  -webkit-transition: 0.24s ease;
+  -moz-transition: 0.24s ease;
+  -ms-transition: 0.24s ease;
+  -o-transition: 0.24s ease;
+  transition: 0.24s ease;
+}
+.wrapper_field .myaccordion .card-header .icon_group .delete-stack svg {
+  fill: #1688fe;
+}
+.wrapper_field .myaccordion .card-header:hover .btn {
+  color: #1688fe;
+}
+.wrapper_field .myaccordion .card-header:hover .fa-stack .fa {
+  color: #1688fe;
+}
+.wrapper_field .myaccordion .card-header:hover .icon_group .delete-stack {
+  opacity: 1;
+  -webkit-transition: 0.24s ease;
+  -moz-transition: 0.24s ease;
+  -ms-transition: 0.24s ease;
+  -o-transition: 0.24s ease;
+  transition: 0.24s ease;
+}
+.wrapper_field .myaccordion .fa-stack {
+  font-size: 13px;
+  color: #7171a6;
+  line-height: 1.4;
+}
+.wrapper_field .myaccordion .fa-stack .fa {
+  color: #7171a6;
+}
+.wrapper_field .myaccordion .btn-link {
+  width: 100%;
+  font-weight: bold;
+  font-family: var(--font-bold);
+  padding: 0;
+  font-size: 13px;
+  color: #7171a6;
+  padding-right: 0;
+  padding-left: 0;
+}
+.wrapper_field .myaccordion .btn-link .btn-delete {
+  background-color: transparent;
+  padding: 0;
+}
+.wrapper_field .myaccordion .btn-link:hover,
+.wrapper_field .myaccordion .btn-link:focus {
+  text-decoration: none;
+}
+.wrapper_field .myaccordion li + li {
+  margin-top: 10px;
+}
 
 /*# sourceMappingURL=style.css.map */
