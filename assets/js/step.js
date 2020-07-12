@@ -103,6 +103,51 @@ employementFinalizeFormButton.addEventListener('click', () => {
   employementFinalizeForm.classList.add('skillForm-field-block');
 })
 
+// Add Link Finalize Form Show and Hide Code here.
+const addLinkFinalizeForm = document.querySelector('.addLinkFinalize-field-form');
+const addLinkFinalizeFormButton = document.querySelector('.add-Link-finalize');
+
+addLinkFinalizeFormButton.addEventListener('click', () => {
+  addLinkFinalizeForm.classList.add('addForm-field-block');
+  addLinkFinalizeForm.removeList.add('addForm-field-none');
+})
+
+// Training & Course Finalize Form Show and Hide Code here.
+const TrainingFinalizeForm = document.querySelector('.trainingForm-field-none');
+const TrainingFinalizeFormButton = document.querySelector('.add-course-finalize');
+
+TrainingFinalizeFormButton.addEventListener('click', () => {
+  TrainingFinalizeForm.classList.add('trainingForm-field-block');
+  TrainingFinalizeForm.removeList.add('trainingForm-field-none');
+})
+
+// Language Finalize Form Show and Hide Code here.
+const LanguageFinalizeForm = document.querySelector('.languageForm-field-none');
+const LanguageFinalizeFormButton = document.querySelector('.add-Language-finalize');
+
+LanguageFinalizeFormButton.addEventListener('click', () => {
+  LanguageFinalizeForm.classList.add('languageForm-field-block');
+  LanguageFinalizeForm.removeList.add('languageForm-field-none');
+})
+
+// Interest/Hobby Finalize Form Show and Hide Code here.
+const InterestFinalizeForm = document.querySelector('.interestForm-field-none');
+const InterestFinalizeFormButton = document.querySelector('.add-hobby-finalize');
+
+InterestFinalizeFormButton.addEventListener('click', () => {
+  InterestFinalizeForm.classList.add('interestForm-field-block');
+  InterestFinalizeForm.removeList.add('interestForm-field-none');
+})
+
+// Interest/Hobby Finalize Form Show and Hide Code here.
+const RolesFinalizeForm = document.querySelector('.rolesForm-field-none');
+const RolesFinalizeFormButton = document.querySelector('.add-role-finalize');
+
+RolesFinalizeFormButton.addEventListener('click', () => {
+  RolesFinalizeForm.classList.add('rolesForm-field-block');
+  RolesFinalizeForm.removeList.add('rolesForm-field-none');
+})
+
 
 // Upload Image Profile/Avatar
 function imageProfilePreview(input) {
@@ -123,6 +168,46 @@ $("#imageUpload").change(function() {
 
 // Form Accordion step by step
 $("#accordion").on("hide.bs.collapse show.bs.collapse", e => {
+  $(e.target)
+    .prev()
+    .find("i:last-child")
+    .toggleClass("fa-chevron-up fa-chevron-down");
+});
+
+// Form Accordion step by step
+$("#AddLinkaccordion").on("hide.bs.collapse show.bs.collapse", e => {
+  $(e.target)
+    .prev()
+    .find("i:last-child")
+    .toggleClass("fa-chevron-up fa-chevron-down");
+});
+
+// Form Accordion step by step
+$("#Trainingccordion").on("hide.bs.collapse show.bs.collapse", e => {
+  $(e.target)
+    .prev()
+    .find("i:last-child")
+    .toggleClass("fa-chevron-up fa-chevron-down");
+});
+
+// Form Accordion step by step
+$("#Languageaccordion").on("hide.bs.collapse show.bs.collapse", e => {
+  $(e.target)
+    .prev()
+    .find("i:last-child")
+    .toggleClass("fa-chevron-up fa-chevron-down");
+});
+
+// Form Accordion step by step
+$("#Interestaccordion").on("hide.bs.collapse show.bs.collapse", e => {
+  $(e.target)
+    .prev()
+    .find("i:last-child")
+    .toggleClass("fa-chevron-up fa-chevron-down");
+});
+
+// Form Accordion step by step
+$("#Rolesaccordion").on("hide.bs.collapse show.bs.collapse", e => {
   $(e.target)
     .prev()
     .find("i:last-child")

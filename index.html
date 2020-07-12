@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/>
   <link rel="stylesheet" href="assets/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/picker/datedropper.min.css">
-  <link rel="stylesheet" href="assets/css/style.css?v=1.2">
+  <link rel="stylesheet" href="assets/css/style.css?v=1.3">
 
   <style>
     /* Swal */
@@ -36,7 +36,7 @@
   <section class="wrapper_field">
     <div class="container-fluid p-0">
       <div class="row">
-        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 pr-0">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pr-0">
           <div class="wrapper-form-innerContent" id="wrapperColumns">
             <div tabindex="0" class="form_content" id="formContentBox">
               <div class="step_navHeader">
@@ -593,6 +593,83 @@
                               <p>SCUM FUNDAMENTALS at Absa Internal Training, 2020</p>
                             </div>
                           </div>
+
+                          <div id="Trainingccordion" class="myaccordion mt-4 trainingFinalize-field-form trainingForm-field-none">
+                            <div class="card">
+                              <div class="card-header" id="TrainingOne">
+                                <h2 class="mb-0">
+                                  <div class="d-flex align-items-center justify-content-between btn btn-link">
+                                    (Not specified), Unknown - Unknown
+                                    <div class="icon_group">
+                                      <button type="button" class="btn btn-delete" id="deletButtonTraining">
+                                        <span class="delete-stack">
+                                          <!-- <i class="fa fa-trash"></i> -->
+                                          <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="SvgIcon-sc-1r5ilkg-0 lbKGaN">
+                                            <path fill-rule="evenodd"
+                                              d="M10 .667c.736 0 1.333.597 1.333 1.333v.667h2c.737 0 1.334.597 1.334 1.333v1.333c0 .737-.597 1.334-1.334 1.334h-.054L12.667 14c0 .736-.597 1.333-1.334 1.333H4.667c-.737 0-1.334-.597-1.331-1.278l-.617-7.388h-.052a1.333 1.333 0 01-1.334-1.334V4c0-.736.597-1.333 1.334-1.333h2V2c0-.736.597-1.333 1.333-1.333h4zm1.941 6H4.057L4.667 14h6.666l.003-.055.605-7.278zM13.333 4H2.667v1.333h10.666V4zM10 2H6v.667h4V2z">
+                                            </path>
+                                          </svg>
+                                        </span>
+                                      </button>
+                                      <span class="fa-stack fa-sm" data-toggle="collapse" data-target="#TrainingcollapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <i class="fa fa-chevron-up fa-stack-1x fa-inverse"></i>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </h2>
+                              </div>
+                              <div id="TrainingcollapseOne" class="collapse show" aria-labelledby="TrainingOne" data-parent="#Trainingccordion">
+                                <div class="card-body">
+                                  <div class="add-form form-field ">
+                                    <div class="form-innerField">
+                                      <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                          <div class="form-group">
+                                            <label for="training_course"><span>Course</span></label>
+                                            <input type="text" class="form-control" id="training_course" placeholder="SCUM Fundamentals">
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                          <div class="form-group">
+                                            <label for="training_institution"><span>Institution</span></label>
+                                            <input type="text" class="form-control" id="training_institution" placeholder="ABSA Internal Training">
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="form-innerField">
+                                      <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                          <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                                              <div class="form-group">
+                                                <label for="training_StartDate"><span>Start Date</span></label>
+                                                <input type="text" class="form-control" id="training_StartDate" placeholder="Start Date">
+                                              </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                                              <div class="form-group">
+                                                <label for="training_EndDate"><span>End Date</span></label>
+                                                <input type="text" class="form-control" id="training_EndDate" placeholder="End Date">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                          <div class="form-group">
+                                            <label for="traingin_city"><span>City</span></label>
+                                            <input type="text" class="form-control" id="traingin_city" placeholder="Sandton">
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
                           <div class="add_button divider-border-dotted mt-4 mb-4">
                             <button type="button" class="btn btn-default add-course-finalize btn-transparent btn-border"><span class="icon"><i class="fa fa-plus-circle"></i></span> Add Course/Training</button>
                           </div>
@@ -619,10 +696,313 @@
                               <p>In this section, add links to your personal website, portfolio, and/or Linkedin profile that you would like prospective employers to see.</p>
                             </div>
                           </div>
+
+                          <div id="AddLinkaccordion" class="myaccordion mt-4 addLinkFinalize-field-form addForm-field-none">
+                            <div class="card">
+                              <div class="card-header" id="addLinkOne">
+                                <h2 class="mb-0">
+                                  <div class="d-flex align-items-center justify-content-between btn btn-link">
+                                    (Not specified), Unknown - Unknown
+                                    <div class="icon_group">
+                                      <button type="button" class="btn btn-delete" id="deletButtonExperience">
+                                        <span class="delete-stack">
+                                          <!-- <i class="fa fa-trash"></i> -->
+                                          <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="SvgIcon-sc-1r5ilkg-0 lbKGaN">
+                                            <path fill-rule="evenodd"
+                                              d="M10 .667c.736 0 1.333.597 1.333 1.333v.667h2c.737 0 1.334.597 1.334 1.333v1.333c0 .737-.597 1.334-1.334 1.334h-.054L12.667 14c0 .736-.597 1.333-1.334 1.333H4.667c-.737 0-1.334-.597-1.331-1.278l-.617-7.388h-.052a1.333 1.333 0 01-1.334-1.334V4c0-.736.597-1.333 1.334-1.333h2V2c0-.736.597-1.333 1.333-1.333h4zm1.941 6H4.057L4.667 14h6.666l.003-.055.605-7.278zM13.333 4H2.667v1.333h10.666V4zM10 2H6v.667h4V2z">
+                                            </path>
+                                          </svg>
+                                        </span>
+                                      </button>
+                                      <span class="fa-stack fa-sm" data-toggle="collapse" data-target="#addLinkcollapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <i class="fa fa-chevron-up fa-stack-1x fa-inverse"></i>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </h2>
+                              </div>
+                              <div id="addLinkcollapseOne" class="collapse show" aria-labelledby="addLinkOne" data-parent="#AddLinkaccordion">
+                                <div class="card-body">
+                                  <div class="add-form form-field ">
+                                    <div class="form-innerField">
+                                      <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                          <div class="form-group">
+                                            <label for="add_fieldOne"><span>Lable/Type</span></label>
+                                            <input type="text" class="form-control" id="add_fieldOne" placeholder="e.g Facebook, Google, LinkedIn, other">
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                          <div class="form-group">
+                                            <label for="link_fieldOne"><span>Link</span></label>
+                                            <input type="text" class="form-control" id="link_fieldOne" placeholder="Link">
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="form-innerField">
+                                      <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                          <div class="form-group">
+                                            <label for="add_fieldTwo"><span>Lable/Type</span></label>
+                                            <input type="text" class="form-control" id="add_fieldTwo" placeholder="e.g Facebook, Google, LinkedIn, other">
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                          <div class="form-group">
+                                            <label for="link_fieldTwo"><span>Link</span></label>
+                                            <input type="text" class="form-control" id="link_fieldTwo" placeholder="Link">
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
                           <div class="add_button divider-border-dotted mt-4 mb-4">
                             <button type="button" class="btn btn-default add-Link-finalize btn-transparent btn-border"><span class="icon"><i class="fa fa-plus-circle"></i></span> Add Link</button>
                           </div>
                         </div>
+
+
+                        <div class="add_FieldContentFormLink fieldFormContent">
+                          <div class="heading_content">
+                            <div class="sub_head">
+                              <h4>Please capture your Language Proficiency</h4>
+                            </div>
+                            <div class="sub-Title">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum odio quisquam, molestias beatae error aliquam.</p>
+                            </div>
+                          </div>
+
+                          <div id="Languageaccordion" class="myaccordion mt-4 languageFinalize-field-form languageForm-field-none">
+                            <div class="card">
+                              <div class="card-header" id="LanguageOne">
+                                <h2 class="mb-0">
+                                  <div class="d-flex align-items-center justify-content-between btn btn-link">
+                                    (Not specified), Unknown - Unknown
+                                    <div class="icon_group">
+                                      <button type="button" class="btn btn-delete" id="deletButtonLanguage">
+                                        <span class="delete-stack">
+                                          <!-- <i class="fa fa-trash"></i> -->
+                                          <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="SvgIcon-sc-1r5ilkg-0 lbKGaN">
+                                            <path fill-rule="evenodd"
+                                              d="M10 .667c.736 0 1.333.597 1.333 1.333v.667h2c.737 0 1.334.597 1.334 1.333v1.333c0 .737-.597 1.334-1.334 1.334h-.054L12.667 14c0 .736-.597 1.333-1.334 1.333H4.667c-.737 0-1.334-.597-1.331-1.278l-.617-7.388h-.052a1.333 1.333 0 01-1.334-1.334V4c0-.736.597-1.333 1.334-1.333h2V2c0-.736.597-1.333 1.333-1.333h4zm1.941 6H4.057L4.667 14h6.666l.003-.055.605-7.278zM13.333 4H2.667v1.333h10.666V4zM10 2H6v.667h4V2z">
+                                            </path>
+                                          </svg>
+                                        </span>
+                                      </button>
+                                      <span class="fa-stack fa-sm" data-toggle="collapse" data-target="#LanguagecollapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <i class="fa fa-chevron-up fa-stack-1x fa-inverse"></i>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </h2>
+                              </div>
+                              <div id="LanguagecollapseOne" class="collapse show" aria-labelledby="LanguageOne" data-parent="#Languageaccordion">
+                                <div class="card-body">
+                                  <div class="add-form form-field ">
+                                    <div class="form-innerField">
+                                      <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                          <div class="form-group">
+                                            <label for="language_fieldOne"><span>Language</span></label>
+                                            <input type="text" class="form-control" id="language_fieldOne" placeholder="Language">
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                          <div class="form-group">
+                                            <label for="proficiencyLang_fieldOne"><span>Proficiency</span></label>
+                                            <input type="text" class="form-control" id="proficiencyLang_fieldOne" placeholder="Proficiency %">
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="form-innerField">
+                                      <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                          <div class="form-group">
+                                            <label for="language_fieldTwo"><span>Language</span></label>
+                                            <input type="text" class="form-control" id="language_fieldTwo" placeholder="Language">
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                          <div class="form-group">
+                                            <label for="proficiencyLang_fieldTwo"><span>Proficiency</span></label>
+                                            <input type="text" class="form-control" id="proficiencyLang_fieldTwo" placeholder="Proficiency %">
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <div class="add_button divider-border-dotted mt-4 mb-4">
+                            <button type="button" class="btn btn-default add-Language-finalize btn-transparent btn-border"><span class="icon"><i class="fa fa-plus-circle"></i></span> Add Language</button>
+                          </div>
+                        </div>
+
+
+                        <div class="add_FieldContentFormLink fieldFormContent">
+                          <div class="heading_content">
+                            <div class="sub_head">
+                              <h4>Please capture your Interest Hobby</h4>
+                            </div>
+                            <div class="sub-Title">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum odio quisquam, molestias beatae error aliquam.</p>
+                            </div>
+                          </div>
+
+                          <div id="Interestaccordion" class="myaccordion mt-4 interestFinalize-field-form interestForm-field-none">
+                            <div class="card">
+                              <div class="card-header" id="InteresteOne">
+                                <h2 class="mb-0">
+                                  <div class="d-flex align-items-center justify-content-between btn btn-link">
+                                    (Not specified), Unknown - Unknown
+                                    <div class="icon_group">
+                                      <button type="button" class="btn btn-delete" id="deletButtonInterest">
+                                        <span class="delete-stack">
+                                          <!-- <i class="fa fa-trash"></i> -->
+                                          <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="SvgIcon-sc-1r5ilkg-0 lbKGaN">
+                                            <path fill-rule="evenodd"
+                                              d="M10 .667c.736 0 1.333.597 1.333 1.333v.667h2c.737 0 1.334.597 1.334 1.333v1.333c0 .737-.597 1.334-1.334 1.334h-.054L12.667 14c0 .736-.597 1.333-1.334 1.333H4.667c-.737 0-1.334-.597-1.331-1.278l-.617-7.388h-.052a1.333 1.333 0 01-1.334-1.334V4c0-.736.597-1.333 1.334-1.333h2V2c0-.736.597-1.333 1.333-1.333h4zm1.941 6H4.057L4.667 14h6.666l.003-.055.605-7.278zM13.333 4H2.667v1.333h10.666V4zM10 2H6v.667h4V2z">
+                                            </path>
+                                          </svg>
+                                        </span>
+                                      </button>
+                                      <span class="fa-stack fa-sm" data-toggle="collapse" data-target="#InterestcollapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <i class="fa fa-chevron-up fa-stack-1x fa-inverse"></i>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </h2>
+                              </div>
+                              <div id="InterestcollapseOne" class="collapse show" aria-labelledby="InterestOne" data-parent="#Interestaccordion">
+                                <div class="card-body">
+                                  <div class="add-form form-field ">
+                                    <div class="form-innerField">
+                                      <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                          <div class="form-group">
+                                            <label for="interest_fieldOne"><span>Interest/Hobby</span></label>
+                                            <input type="text" class="form-control" id="interest_fieldOne" placeholder="Interest/Hobby">
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                          <div class="form-group">
+                                            <label for="interest_fieldTwo"><span>Interest/Hobby</span></label>
+                                            <input type="text" class="form-control" id="interest_fieldTwo" placeholder="Interest/Hobby">
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <div class="add_button divider-border-dotted mt-4 mb-4">
+                            <button type="button" class="btn btn-default add-hobby-finalize btn-transparent btn-border"><span class="icon"><i class="fa fa-plus-circle"></i></span> Add Item</button>
+                          </div>
+                        </div>
+
+
+                        <div class="add_FieldContentFormLink fieldFormContent">
+                          <div class="heading_content">
+                            <div class="sub_head">
+                              <h4>Please capture your Roles</h4>
+                            </div>
+                            <div class="sub-Title">
+                              <p>Role Spectrum defines the % time spend in the role as well as how proficient you are in the role.</p>
+                            </div>
+                          </div>
+
+                          <div id="Rolesaccordion" class="myaccordion mt-4 rolesFinalize-field-form rolesForm-field-none">
+                            <div class="card">
+                              <div class="card-header" id="RolesOne">
+                                <h2 class="mb-0">
+                                  <div class="d-flex align-items-center justify-content-between btn btn-link">
+                                    (Not specified), Unknown - Unknown
+                                    <div class="icon_group">
+                                      <button type="button" class="btn btn-delete" id="deletButtonRoles">
+                                        <span class="delete-stack">
+                                          <!-- <i class="fa fa-trash"></i> -->
+                                          <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="SvgIcon-sc-1r5ilkg-0 lbKGaN">
+                                            <path fill-rule="evenodd"
+                                              d="M10 .667c.736 0 1.333.597 1.333 1.333v.667h2c.737 0 1.334.597 1.334 1.333v1.333c0 .737-.597 1.334-1.334 1.334h-.054L12.667 14c0 .736-.597 1.333-1.334 1.333H4.667c-.737 0-1.334-.597-1.331-1.278l-.617-7.388h-.052a1.333 1.333 0 01-1.334-1.334V4c0-.736.597-1.333 1.334-1.333h2V2c0-.736.597-1.333 1.333-1.333h4zm1.941 6H4.057L4.667 14h6.666l.003-.055.605-7.278zM13.333 4H2.667v1.333h10.666V4zM10 2H6v.667h4V2z">
+                                            </path>
+                                          </svg>
+                                        </span>
+                                      </button>
+                                      <span class="fa-stack fa-sm" data-toggle="collapse" data-target="#RolescollapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <i class="fa fa-chevron-up fa-stack-1x fa-inverse"></i>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </h2>
+                              </div>
+                              <div id="RolescollapseOne" class="collapse show" aria-labelledby="RolesOne" data-parent="#Rolesaccordion">
+                                <div class="card-body">
+                                  <div class="add-form form-field ">
+                                    <div class="form-innerField">
+                                      <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                          <div class="form-group">
+                                            <label for="job_fieldOne"><span>Job Role/Title Name</span></label>
+                                            <input type="text" class="form-control" id="job_fieldOne" placeholder="Program Manager">
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                          <div class="form-group">
+                                            <label for="spectrum_fieldOne"><span>Spectrum %</span></label>
+                                            <input type="text" class="form-control" id="spectrum_fieldOne" placeholder="Spectrum %">
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="form-innerField">
+                                      <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                          <div class="form-group">
+                                            <label for="job_fieldTwo"><span>Job Role/Title Name</span></label>
+                                            <input type="text" class="form-control" id="job_fieldTwo" placeholder="Program Manager">
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                          <div class="form-group">
+                                            <label for="spectrum_fieldTwo"><span>Spectrum %</span></label>
+                                            <input type="text" class="form-control" id="spectrum_fieldTwo" placeholder="Spectrum %">
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <div class="add_button divider-border-dotted mt-4 mb-4">
+                            <button type="button" class="btn btn-default add-role-finalize btn-transparent btn-border"><span class="icon"><i class="fa fa-plus-circle"></i></span> Add Role</button>
+                          </div>
+                        </div>
+
+
                       </div>
                       <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
                         <div class="form-group button-group step-button d-flex justify-content-between">
@@ -648,150 +1028,7 @@
           </div>
         </div>
 
-        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 p-0" id="rightInformation">
-          <div class="rightResumeContent-wrapper">
-            <div class="resumeBox-content">
-              <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 pr-0">
-                  <div class="leftInfo">
-                    <div class="profileInfo">
-                      <div class="profileImage">
-                        <img src="https://images.pexels.com/photos/736716/pexels-photo-736716.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-fluid avatarImage" alt="">
-                      </div>
-                      <div class="profileTitle">
-                        <h4 class="name">Marius Van Graan</h4>
-                        <small class="label">Senior Business Analyst</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
-                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 pl-0">
-                  <div class="rightInfo">
-                    <div class="socialInfo">
-                      <div class="row">
-                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
-                          <div class="socialMediaLink">
-                            <ul class="socials">
-                              <li class="social-list">
-                                <p><i class="fas fa-map-marker"></i> <span>Gauteng, Kempton Park, 1619</span></p>
-                              </li>
-                              <li class="social-list">
-                                <p><i class="fas fa-phone-alt"></i> <span>079170551</span></p>
-                              </li>
-                              <li class="social-list">
-                                <p><i class="fa fa-envelope"></i> <span>marius@modusbps.com</span></p>
-                              </li>
-                              <li class="social-list">
-                                <p><i class="fa fa-venus-mars"></i> <span>Male</span></p>
-                              </li>
-                              <li class="social-list">
-                                <p><i class="far fa-flag"></i> <span>South African</span></p>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12"></div>
-                      </div>
-                    </div>
-
-                    <div class="personalInfo">
-                      <h4 class="sub_head">Persoanl Profile</h4>
-                      <div class="text">
-                        <p>Bringing people together. Providing talent. Supporting teams. Creating great things.
-                        In my life as a solutions architect, business analyst, system analyst, project manager, program manager I came to a realisation that in the fast moving world, a frequent assessment and adaptation of plans is required to deliver usable and fit for purpose components, and that’s how I got interested in agile software development – especially in Scrum.
-                        With this new-found knowledge, I started supporting my team by allowing them to find their own innovative rhythm and know that not one size fits all. It’s always an exciting experience to see how teams can outgrow themselves. I love sharing my passion with others. If I choose a project, I’m all in, and my motivation easily infects others to achieve a common goal.
-                        The method is second place, but needs to be a good fit with the team. Next to Scrum, Kanban and attention to detail also provide amazing results.
-                        When someone chooses to work with me, they are bringing a strong contender to the table – and ensuring to synergise for continuous improvement. I see it as my job to move the team forward and to protect it from negative influences. In the process, things can get uncomfortable, but with a lot of perseverance, the team, management, always come together as one, find effective compromises, and deliver excellent results.
-                        I make things happen!!!
-                        </p>
-                      </div>
-                    </div>
-
-                    <div class="columnFlexInfo">
-                      <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 stretch-card">
-                          <div class="interestInfo box">
-                            <h4 class="sub_head"><i class="fa fa-bicycle"></i> <span>Interest</span></h4>
-
-                            <div class="flexInfo">
-                              <div class="innerItem">
-                                <span class="icon icon-red"><i class="fab fa-pagelines"></i></span>
-                                <span class="text">Gardening</span>
-                              </div>
-                              <div class="innerItem">
-                                <span class="icon icon-gray"><i class="fas fa-swimmer"></i></span>
-                                <span class="text">Swimming</span>
-                              </div>
-                              <div class="innerItem">
-                                <span class="icon icon-blue"><i class="far fa-futbol"></i></span>
-                                <span class="text">Football</span>
-                              </div>
-                              <div class="innerItem">
-                                <span class="icon icon-green"><i class="fas fa-fish"></i></span>
-                                <span class="text">Fishing</span>
-                              </div>
-                              <div class="innerItem">
-                                <span class="icon icon-orange"><i class="fas fa-blender"></i></span>
-                                <span class="text">Cooking</span>
-                              </div>
-                              <div class="innerItem">
-                                <span class="icon icon-yellow"><i class="fas fa-guitar"></i></span>
-                                <span class="text">Guitar</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 stretch-card">
-                          <div class="box roleSpectrunInfo">
-                            <h4 class="sub_head"><i class="fas fa-chart-pie"></i> <span>Role Spectrum</span></h4>
-
-                            <div class="pieChart">
-                              <!-- <div class="chart1"><div><span>60%</span></div></div>
-                              <div class="chart2"><div><span>22%</span></div></div>
-                              <div class="chart3"><div><span>8%</span></div></div>
-                              <div class="chart4"><div><span>7%</span></div></div>
-                              <div class="chart5"><div><span>3%</span></div></div> -->
-                              <canvas id="pieChartRole" width=200 height=200></canvas>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="certificatInfo">
-                      <h4 class="sub_head"><i class="fas fa-award"></i> <span>Certification & Training</span></h4>
-                      <div class="flexCertificate">
-                        <div class="certificateItem">
-                          <span class="icon blueIcon">
-                            <i class="fas fa-certificate"></i>
-                          </span>
-                          <div class="title">
-                            <h5>Certification <span class="year">2007</span></h5>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae impedit corrupti dolorem minima beatae placeat at hic explicabo numquam laborum?</p>
-                          </div>
-                        </div>
-                        <div class="certificateItem">
-                          <span class="icon greenIcon">
-                            <i class="fas fa-users"></i>
-                          </span>
-                          <div class="title">
-                            <h5>Training <span class="year">2012</span></h5>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae impedit corrupti dolorem minima beatae placeat at hic explicabo numquam laborum?</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -806,7 +1043,7 @@
   <script src="assets/js/nicescroll/jquery.nicescroll.min.js"></script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
-  <script src="assets/js/step.js?v=1.1"></script>
+  <script src="assets/js/step.js?v=1.2"></script>
 
 
 
@@ -851,6 +1088,69 @@
 
     // Delete Modal When Delete Button
     document.getElementById('deletButtonExperience').onclick = function() {
+      swal({
+          title: "Delete Entry",
+          text: "Are you sure you want to delete this entry?",
+          icon: false,
+          buttons: true,
+          dangerMode: true,
+        })
+        .then((willDelete) => {
+          if (willDelete) {
+            swal("Poof! Your imaginary file has been deleted!", {
+              icon: "success",
+            });
+          } else {
+            swal("Your imaginary file is safe!");
+          }
+        });
+    }
+
+
+    // Trainig Course Delete Modal When Delete Button
+    document.getElementById('deletButtonTraining').onclick = function() {
+      swal({
+          title: "Delete Entry",
+          text: "Are you sure you want to delete this entry?",
+          icon: false,
+          buttons: true,
+          dangerMode: true,
+        })
+        .then((willDelete) => {
+          if (willDelete) {
+            swal("Poof! Your imaginary file has been deleted!", {
+              icon: "success",
+            });
+          } else {
+            swal("Your imaginary file is safe!");
+          }
+        });
+    }
+
+
+    // Language Delete Modal When Delete Button
+    document.getElementById('deletButtonLanguage').onclick = function() {
+      swal({
+          title: "Delete Entry",
+          text: "Are you sure you want to delete this entry?",
+          icon: false,
+          buttons: true,
+          dangerMode: true,
+        })
+        .then((willDelete) => {
+          if (willDelete) {
+            swal("Poof! Your imaginary file has been deleted!", {
+              icon: "success",
+            });
+          } else {
+            swal("Your imaginary file is safe!");
+          }
+        });
+    }
+
+
+    // Language Delete Modal When Delete Button
+    document.getElementById('deletButtonInterest').onclick = function() {
       swal({
           title: "Delete Entry",
           text: "Are you sure you want to delete this entry?",

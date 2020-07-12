@@ -812,6 +812,36 @@ input, select {
   position: relative;
   display: block;
 }
+.wrapper_field .addForm-field-none {
+  display: none !important;
+}
+.wrapper_field .addForm-field-block {
+  display: block !important;
+}
+.wrapper_field .trainingForm-field-none {
+  display: none !important;
+}
+.wrapper_field .trainingForm-field-block {
+  display: block !important;
+}
+.wrapper_field .languageForm-field-none {
+  display: none !important;
+}
+.wrapper_field .languageForm-field-block {
+  display: block !important;
+}
+.wrapper_field .interestForm-field-none {
+  display: none !important;
+}
+.wrapper_field .interestForm-field-block {
+  display: block !important;
+}
+.wrapper_field .rolesForm-field-none {
+  display: none !important;
+}
+.wrapper_field .rolesForm-field-block {
+  display: block !important;
+}
 .wrapper_field .rightResumeContent-wrapper {
   background-color: #e5e4ea;
   padding: 2.5rem;
@@ -1118,6 +1148,319 @@ input, select {
   display: block;
   position: relative;
   text-align: left;
+}
+
+.resumeBody {
+  overflow: auto;
+}
+
+.wrapper_fieldResume {
+  background-color: #e5e4ea;
+  padding: 2.5rem;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  /* total width */
+  /* background of the scrollbar except button or resizer */
+  /* scrollbar itself */
+  /* set button(top and bottom of the scrollbar) */
+}
+.wrapper_fieldResume::-webkit-scrollbar {
+  background-color: #fff;
+  width: 16px;
+}
+.wrapper_fieldResume::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+.wrapper_fieldResume::-webkit-scrollbar-track:hover {
+  background-color: #f4f4f4;
+}
+.wrapper_fieldResume::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+  border: 5px solid #fff;
+}
+.wrapper_fieldResume::-webkit-scrollbar-thumb:hover {
+  background-color: #a0a0a5;
+  border: 4px solid #f4f4f4;
+}
+.wrapper_fieldResume .scrollbar::-webkit-scrollbar-button {
+  display: none;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem 1.2rem;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .leftInfo {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .leftInfo .profileInfo {
+  position: relative;
+  text-align: center;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .leftInfo .profileInfo .profileImage .avatarImage {
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+  position: relative;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .leftInfo .profileInfo .profileTitle {
+  margin-top: 15px;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .leftInfo .profileInfo .profileTitle .name {
+  font-size: 1em;
+  font-weight: bold;
+  font-family: var(--font-bold);
+  position: relative;
+  text-align: center;
+  display: block;
+  color: #000;
+  visibility: visible;
+  text-transform: uppercase;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .leftInfo .profileInfo .profileTitle .label {
+  font-size: 0.75em;
+  color: #999;
+  display: block;
+  position: relative;
+  font-family: var(--font-regular);
+  font-weight: normal;
+  text-align: center;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo {
+  padding-left: 15px;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .socialInfo .socialMediaLink .socials {
+  display: block;
+  list-style-type: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .socialInfo .socialMediaLink .socials .social-list {
+  margin-bottom: 12px;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .socialInfo .socialMediaLink .socials .social-list p {
+  margin: 0;
+  padding: 0;
+  font-size: 0.8125em;
+  color: #000;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  display: flex;
+  align-items: flex-start;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .socialInfo .socialMediaLink .socials .social-list p i {
+  background-color: #1688fe;
+  height: 22px;
+  width: 22px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+  line-height: 22px;
+  text-align: center;
+  color: #fff;
+  margin-right: 5px;
+  font-size: 0.6875em;
+  vertical-align: middle;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .socialInfo .socialMediaLink .socials .social-list p span {
+  display: inline-block;
+  width: 80%;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .personalInfo {
+  margin-top: 20px;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .personalInfo .sub_head {
+  font-size: 1.125em;
+  font-weight: bold;
+  color: #222;
+  font-family: var(--font-bold);
+  position: relative;
+  display: block;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .personalInfo .text {
+  margin-top: 18px;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .personalInfo .text p {
+  font-size: 0.75em;
+  line-height: 24px;
+  position: relative;
+  color: #222;
+  display: block;
+  text-align: left;
+  visibility: visible;
+  line-height: 24px;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .columnFlexInfo {
+  margin-top: 15px;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .columnFlexInfo .box {
+  background-color: #F8F9F9;
+  padding: 20px 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 100%;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .columnFlexInfo .box .sub_head {
+  font-size: 1.375em;
+  font-weight: bold;
+  color: #222;
+  font-family: var(--font-bold);
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .columnFlexInfo .box .sub_head i {
+  margin-right: 10px;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .columnFlexInfo .box .flexInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  text-align: center;
+  justify-content: center;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .columnFlexInfo .box .flexInfo .icon {
+  width: 65px;
+  height: 65px;
+  line-height: 65px;
+  text-align: center;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+  margin: 0 auto;
+  display: block;
+  color: #fff;
+  border: 2px solid #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .columnFlexInfo .box .flexInfo .icon-red {
+  background-color: #C0392B;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .columnFlexInfo .box .flexInfo .icon-gray {
+  background-color: #D5D8DC;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .columnFlexInfo .box .flexInfo .icon-blue {
+  background-color: #5DADE2;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .columnFlexInfo .box .flexInfo .icon-green {
+  background-color: #58D68D;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .columnFlexInfo .box .flexInfo .icon-orange {
+  background-color: #E67E22;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .columnFlexInfo .box .flexInfo .icon-yellow {
+  background-color: #F4D03F;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .columnFlexInfo .box .flexInfo .text {
+  font-size: 0.875em;
+  font-weight: bold;
+  font-family: var(--font-bold);
+  position: relative;
+  color: #000;
+  margin-top: 10px;
+  display: block;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .columnFlexInfo .box .pieChart {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .certificatInfo {
+  background-color: #F8F9F9;
+  padding: 20px 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .certificatInfo .sub_head {
+  font-size: 1.375em;
+  font-weight: bold;
+  color: #222;
+  font-family: var(--font-bold);
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .certificatInfo .sub_head i {
+  margin-right: 10px;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .certificatInfo .flexCertificate .certificateItem {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .certificatInfo .flexCertificate .certificateItem .icon {
+  font-size: 20px;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border: 2px solid #fff;
+  display: block;
+  color: #fff;
+  margin-right: 20px;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .certificatInfo .flexCertificate .certificateItem .blueIcon {
+  background-color: #1688fe;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .certificatInfo .flexCertificate .certificateItem .greenIcon {
+  background-color: #58D68D;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .certificatInfo .flexCertificate .certificateItem .title {
+  width: 70%;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .certificatInfo .flexCertificate .certificateItem .title h5 {
+  font-size: 1.125em;
+  font-weight: bold;
+  font-family: var(--font-bold);
+  color: #000;
+  position: relative;
+  text-align: left;
+  display: block;
+  margin-bottom: 10px;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .certificatInfo .flexCertificate .certificateItem .title h5 span {
+  color: #C0392B;
+  font-style: italic;
+  font-size: 15px;
+  margin-left: 15px;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content .rightInfo .certificatInfo .flexCertificate .certificateItem .title p {
+  font-size: 0.8125em;
+  line-height: 22px;
+  font-family: var(--font-regular);
+  display: block;
+  position: relative;
+  text-align: left;
+}
+.wrapper_fieldResume .resumeBoxWrapper-content {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem 1.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
