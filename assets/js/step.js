@@ -95,6 +95,14 @@ skillFormButton.addEventListener('click', () => {
   // dividerBar.classList.add('divider-border-dotted-none');
 })
 
+// Skill Form Show and Hide Code here.
+const employementFinalizeForm = document.querySelector('.employmentFinalize-field-form');
+const employementFinalizeFormButton = document.querySelector('.add-employment-finalize');
+
+employementFinalizeFormButton.addEventListener('click', () => {
+  employementFinalizeForm.classList.add('skillForm-field-block');
+})
+
 
 // Upload Image Profile/Avatar
 function imageProfilePreview(input) {
@@ -120,3 +128,97 @@ $("#accordion").on("hide.bs.collapse show.bs.collapse", e => {
     .find("i:last-child")
     .toggleClass("fa-chevron-up fa-chevron-down");
 });
+
+// Nicescroll
+// $(document).ready(function() {
+//   // $("#wrapperColumns").niceScroll("#formContentBox",{cursorcolor:"#F00",cursoropacitymax:0.7,boxzoom:true,touchbehavior:true});
+//   $("#formContentBox").niceScroll({cursorborder:"",cursorcolor:"#00F",boxzoom:true});
+//   // $("#formContentBox").niceScroll();
+// })
+
+// $(function() {
+//   $("#rightInformation").niceScroll({
+//     cursorborder:"",
+//     cursorcolor:"#00F",
+//     boxzoom:false,
+//     autohidemode: false
+//   });
+// })
+
+// PieChart Role
+var data = [
+    {
+        value: 100,
+        color:"#F7464A",
+        highlight: "#FF5A5E",
+        label: "Red"
+    },
+    {
+        value: 50,
+        color: "#46BFBD",
+        highlight: "#5AD3D1",
+        label: "Green"
+    },
+    {
+        value: 25,
+        color: "#FDB45C",
+        highlight: "#FFC870",
+        label: "Yellow"
+    },
+    {
+        value: 25,
+        color: "green",
+        highlight: "#FFC870",
+        label: "Yellow"
+    },
+];
+
+var canvas = document.getElementById("pieChartRole");
+var ctx = canvas.getContext("2d");
+var midX = canvas.width/2;
+var midY = canvas.height/2
+var totalValue = getTotalValue(data);
+
+// Create a pie chart
+var myPieChart = new Chart(ctx).Pie(data, {
+    showTooltips: false,
+    onAnimationProgress: drawSegmentValues
+});
+
+var radius = myPieChart.outerRadius;
+
+function drawSegmentValues()
+{
+    for(var i=0; i<myPieChart.segments.length; i++)
+    {
+        ctx.fillStyle="white";
+        var textSize = canvas.width/30;
+        ctx.font= textSize+"px Gilroy-Regular";
+        // Get needed variables
+        var value = myPieChart.segments[i].value/totalValue*100;
+        if(Math.round(value) !== value)
+        	value = (myPieChart.segments[i].value/totalValue*100).toFixed(1);
+        value = value + '%';
+
+        var startAngle = myPieChart.segments[i].startAngle;
+        var endAngle = myPieChart.segments[i].endAngle;
+        var middleAngle = startAngle + ((endAngle - startAngle)/2);
+
+        // Compute text location
+        var posX = (radius/2) * Math.cos(middleAngle) + midX;
+        var posY = (radius/2) * Math.sin(middleAngle) + midY;
+
+        // Text offside by middle
+        var w_offset = ctx.measureText(value).width/2;
+        var h_offset = textSize/4;
+
+        ctx.fillText(value, posX - w_offset, posY + h_offset);
+    }
+}
+
+function getTotalValue(arr) {
+    var total = 0;
+    for(var i=0; i<arr.length; i++)
+        total += arr[i].value;
+    return total;
+}

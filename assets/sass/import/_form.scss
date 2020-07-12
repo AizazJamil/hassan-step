@@ -2,8 +2,12 @@
   background-color: rgb(247, 247, 252);
   padding: 10px 0 0 0;
   height: 100vh;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  // overflow-y: scroll;
+  overflow: auto;
+  // overflow-x: hidden;
+  // position: fixed;
+  // left: 0;
+  // width: 41.6%;
 
   .form-inner {
     padding: em(40px);
@@ -532,4 +536,36 @@
 
 .myaccordion li + li {
   margin-top: 10px;
+}
+
+// Add Field Content
+.fieldFormContent {
+  .heading_content {
+    .sub_head {
+      padding: 18px 0;
+      border-bottom: 1px dotted rgb(22, 136, 254);
+      h4 {
+        font-size: em(20px);
+        color: #000;
+        font-family: var(--font-bold);
+        font-weight: bold;
+        position: relative;
+        text-align: left;
+        display: block;
+      }
+    }
+
+    .sub-Title {
+      padding: 18px 0;
+      p {
+        font-size: em(15px);
+        color: #000;
+        font-family: var(--font-regular);
+        text-align: left;
+        line-height: 22px;
+        position: relative;
+        display: block;
+      }
+    }
+  }
 }
