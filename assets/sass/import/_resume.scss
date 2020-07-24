@@ -94,6 +94,7 @@
       padding-left: 15px;
       .socialInfo {
         .socialMediaLink {
+          width: 100%;
           .socials {
             display: block;
             list-style-type: none;
@@ -134,7 +135,7 @@
       }
 
       .personalInfo {
-        margin-top: 20px;
+        margin-top: 0;
         .sub_head {
           font-size: em(18px);
           font-weight: bold;
@@ -526,7 +527,405 @@
     padding: 2rem 1.2rem;
 
   }
-  .resume-wrapper {
+  // .resume-wrapper {
+  // }
+
+}
+
+
+/* ================ The Timeline ================ */
+
+.timeline {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 1em 0;
+  list-style-type: none;
+}
+
+.timeline:before {
+  position: absolute;
+  left: 50.6%;
+  top: 0;
+  content: ' ';
+  display: block;
+  width: 3px;
+  height: 100%;
+  margin-left: -3px;
+  background: rgb(80, 80, 80);
+  // background: -moz-linear-gradient(top, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+  // background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(30, 87, 153, 1)), color-stop(100%, rgba(125, 185, 232, 1)));
+  // background: -webkit-linear-gradient(top, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+  // background: -o-linear-gradient(top, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+  // background: -ms-linear-gradient(top, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+  // background: linear-gradient(to bottom, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+
+  z-index: 5;
+}
+
+.timeline li {
+  padding: 1em 0;
+}
+
+.timeline li:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.direction-l {
+  position: relative;
+  width: 150px;
+  float: right;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.direction-r {
+  position: relative;
+  width: 150px;
+  float: left;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.flag-wrapper {
+  position: relative;
+  display: inline-block;
+
+  text-align: right;
+}
+
+.flag {
+  position: relative;
+  display: inline;
+  background: rgb(248, 248, 248);
+  padding: 6px 10px;
+  border-radius: 5px;
+
+  font-weight: 600;
+  text-align: left;
+}
+
+.direction-l .flag-wrapper {
+  text-align: left;
+}
+
+.direction-l .flag {
+  -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+.direction-r .flag {
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+.direction-l .flag:before,
+.direction-r .flag:before {
+  position: absolute;
+  top: 50%;
+  right: 94px;
+  content: ' ';
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-top: -10px;
+  background: #fff;
+  border-radius: 10px;
+  border: 4px solid rgb(255, 80, 80);
+  z-index: 10;
+}
+
+.direction-r .flag:before {
+  left: 110px;
+}
+
+.direction-l .flag:after {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  height: 0;
+  width: 0;
+  margin-top: -8px;
+  border: solid transparent;
+  border-right-color: rgb(248, 248, 248);
+  border-width: 8px;
+  pointer-events: none;
+}
+
+.direction-r .flag:after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  height: 0;
+  width: 0;
+  margin-top: -8px;
+  border: solid transparent;
+  border-left-color: rgb(248, 248, 248);
+  border-width: 8px;
+  pointer-events: none;
+}
+
+.time-wrapper {
+  display: inline;
+
+  line-height: 1em;
+  font-size: 0.66666em;
+  color: rgb(250, 80, 80);
+  vertical-align: middle;
+}
+
+.direction-l .time-wrapper {
+  float: left;
+}
+
+.direction-r .time-wrapper {
+  float: right;
+}
+
+.time {
+  display: inline-block;
+  padding: 4px 6px;
+  background: rgb(248, 248, 248);
+}
+
+.desc {
+  margin: 1em 0;
+  font-size: em(10px);
+  font-style: italic;
+  line-height: 1.5em;
+}
+
+.head_timeline {
+  font-size: em(12px);
+  font-weight: bold;
+  color: #222;
+  text-align: right;
+}
+
+.direction-r .desc {
+  margin: 1em 0;
+}
+
+/* ================ Timeline Media Queries ================ */
+
+@media screen and (max-width: 660px) {
+
+  .timeline {
+    width: 100%;
+    padding: 4em 0 1em 0;
   }
 
+  .timeline li {
+    padding: 2em 0;
+  }
+
+  .direction-l,
+  .direction-r {
+    float: none;
+    width: 100%;
+
+    text-align: center;
+  }
+
+  .flag-wrapper {
+    text-align: center;
+  }
+
+  .flag {
+    background: rgb(255, 255, 255);
+    z-index: 15;
+  }
+
+  .direction-l .flag:before,
+  .direction-r .flag:before {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    content: ' ';
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin-left: -9px;
+    background: #fff;
+    border-radius: 10px;
+    border: 4px solid rgb(255, 80, 80);
+    z-index: 10;
+  }
+
+  .direction-l .flag:after,
+  .direction-r .flag:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -8px;
+    height: 0;
+    width: 0;
+    margin-left: -8px;
+    border: solid transparent;
+    border-bottom-color: rgb(255, 255, 255);
+    border-width: 8px;
+    pointer-events: none;
+  }
+
+  .time-wrapper {
+    display: block;
+    position: relative;
+    margin: 4px 0 0 0;
+    z-index: 14;
+  }
+
+  .direction-l .time-wrapper {
+    float: none;
+  }
+
+  .direction-r .time-wrapper {
+    float: none;
+  }
+
+  .desc {
+    position: relative;
+    margin: 1em 0 0 0;
+    padding: 1em;
+    background: rgb(245, 245, 245);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
+
+    z-index: 15;
+  }
+
+  .direction-l .desc,
+  .direction-r .desc {
+    position: relative;
+    margin: 1em 1em 0 1em;
+    padding: 1em;
+
+    z-index: 15;
+  }
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 660px) {
+
+  .direction-l .desc,
+  .direction-r .desc {
+    margin: 1em 4em 0 4em;
+  }
+
+}
+
+
+// Language Bar
+.language_box {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 1rem 1rem;
+  margin: 0;
+  position: relative;
+  display: block;
+  margin-top: 30px;
+
+  .language_head {
+    @include position(absolute, 0, null, 0, 0);
+    @include prefix(transform, rotate(180deg), webkit ms);
+    background-color: #E42800;
+    // height: 30px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    
+  }
+
+  .lang_barWidht {
+    padding-left: 20px;
+    .lang_barList {
+      @include flexbox();
+      margin-bottom: 10px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      .flag_lang {
+        position: relative;
+        display: block;
+        .name_lang {
+          font-size: 13px;
+          font-weight: bold;
+          background-color: #000;
+          color: #fff;
+          padding: 5px;
+          @include border-radius(3px);
+          @include position(absolute, 0, null, null, 0);
+        }
+        img {
+          width: 60px;
+        }
+      }
+
+      .bar_lines {
+        padding-left: 10px;
+        width: 100%;
+        .barLineWrite {
+          margin-bottom: 5px;
+          display: block;
+          position: relative;
+          overflow: hidden;
+          .progress {
+            font-size: em(10px);
+            font-weight: bold;
+            color: #fff;
+            @include border-radius(0);
+            padding: 2px 5px;
+            height: auto;
+            position: relative;
+            z-index: 1;
+            background-color: transparent;
+          }
+
+          .line_divider {
+            // position: relative;
+            display: block;
+
+            &:before {
+              content: '';
+              width: 100%;
+              height: 2px;
+              background-color: #A9A9A9;
+              @include position(absolute, 50%, 0, null, 0);
+              @include prefix(transform, translateY(-50%), webkit ms);
+            }
+          }
+
+          .progress-bar {
+            height: 100%;
+            width: 0;
+            position: absolute;
+            top: 0;
+            display: block;
+          }
+          .progress-danger {
+            background-color: #E42800;
+          }
+
+          .progress-info {
+            background-color: #03CCCE;
+          }
+
+          .progress-dark {
+            background-color: #000;
+          }
+        }
+      }
+    }
+  }
 }
