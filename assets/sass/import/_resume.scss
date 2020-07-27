@@ -532,6 +532,66 @@
 
 }
 
+/* ================ Personal Information ================ */
+.personal_info {
+  margin: 20px 0 30px 0;
+  text-align: center;
+  .info_block {
+    display: block;
+    list-style-type: none;
+    position: relative;
+
+    li {
+      .inner_info {
+        font-size: em(13px);
+        font-weight: normal;
+        color: #000;
+        position: relative;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+/* ================ Timeline Head ================ */
+.timeline_head {
+  .head {
+    text-align: center;
+    h4 {
+      font-size: em(20px);
+      font-weight: bold;
+      color: #000;
+
+      .icon {
+        font-size: 45px;
+        margin-right: 8px;
+        vertical-align:middle;
+      }
+    }
+  }
+
+  .inline_flex {
+    @include flexbox();
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 20px;
+    list-style-type: none;
+
+    li {
+      h5 {
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  p {
+    text-align: center;
+    margin-top: 10px;
+  }
+}
 
 /* ================ The Timeline ================ */
 
@@ -578,18 +638,60 @@
 
 .direction-l {
   position: relative;
-  width: 150px;
+  // width: 150px;
   float: right;
   text-align: left;
   padding-left: 10px;
+
+  .time-wrapper {
+    margin-bottom: 4px;
+    display: block;
+  }
+
+  .head_timeline {
+    display: block;
+    text-align: left;
+    margin-top: 6px;
+  }
+  
+  @media screen and (min-width: 1400px) and (max-width: 1900px) {
+    width: 164px;
+  }
+
+  @media screen and (min-width: 1300px) and (max-width: 1399px) {
+    width: 150px;
+  }
+
+  @media screen and (min-width: 992px) and (max-width: 1299px) {
+    width: 150px;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 991px) {
+    width: 150px;
+  }
 }
 
 .direction-r {
   position: relative;
-  width: 150px;
   float: left;
   text-align: right;
   padding-right: 10px;
+
+  @media screen and (min-width: 1400px) and (max-width: 1900px) {
+    width: 164px;
+  }
+
+  @media screen and (min-width: 1300px) and (max-width: 1399px) {
+    width: 150px;
+  }
+
+  @media screen and (min-width: 992px) and (max-width: 1299px) {
+    width: 150px;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 991px) {
+    width: 150px;
+  }
 }
 
 .flag-wrapper {
@@ -923,6 +1025,22 @@
 
           .progress-dark {
             background-color: #000;
+          }
+
+          .progress-orange {
+            background-color: #FF6A4A;
+          }
+
+          .progress-success {
+            background-color: #68FE20;
+          }
+
+          .progress-warning {
+            background-color: #E2F000;
+          }
+
+          .progress-gray {
+            background-color: #00B067;
           }
         }
       }

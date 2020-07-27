@@ -1466,6 +1466,59 @@ input, select {
   padding: 2rem 1.2rem;
 }
 
+/* ================ Personal Information ================ */
+.personal_info {
+  margin: 20px 0 30px 0;
+  text-align: center;
+}
+.personal_info .info_block {
+  display: block;
+  list-style-type: none;
+  position: relative;
+}
+.personal_info .info_block li .inner_info {
+  font-size: 0.8125em;
+  font-weight: normal;
+  color: #000;
+  position: relative;
+  display: inline-block;
+}
+
+/* ================ Timeline Head ================ */
+.timeline_head .head {
+  text-align: center;
+}
+.timeline_head .head h4 {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #000;
+}
+.timeline_head .head h4 .icon {
+  font-size: 45px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.timeline_head .inline_flex {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  margin-top: 20px;
+  list-style-type: none;
+}
+.timeline_head .inline_flex li h5 {
+  font-size: 16px;
+  font-weight: bold;
+}
+.timeline_head p {
+  text-align: center;
+  margin-top: 10px;
+}
+
 /* ================ The Timeline ================ */
 .timeline {
   position: relative;
@@ -1503,18 +1556,65 @@ input, select {
 
 .direction-l {
   position: relative;
-  width: 150px;
   float: right;
   text-align: left;
   padding-left: 10px;
 }
+.direction-l .time-wrapper {
+  margin-bottom: 4px;
+  display: block;
+}
+.direction-l .head_timeline {
+  display: block;
+  text-align: left;
+  margin-top: 6px;
+}
+@media screen and (min-width: 1400px) and (max-width: 1900px) {
+  .direction-l {
+    width: 164px;
+  }
+}
+@media screen and (min-width: 1300px) and (max-width: 1399px) {
+  .direction-l {
+    width: 150px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1299px) {
+  .direction-l {
+    width: 150px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 991px) {
+  .direction-l {
+    width: 150px;
+  }
+}
 
 .direction-r {
   position: relative;
-  width: 150px;
   float: left;
   text-align: right;
   padding-right: 10px;
+}
+@media screen and (min-width: 1400px) and (max-width: 1900px) {
+  .direction-r {
+    width: 164px;
+  }
+}
+@media screen and (min-width: 1300px) and (max-width: 1399px) {
+  .direction-r {
+    width: 150px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1299px) {
+  .direction-r {
+    width: 150px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 991px) {
+  .direction-r {
+    width: 150px;
+  }
 }
 
 .flag-wrapper {
@@ -1850,6 +1950,18 @@ input, select {
 }
 .language_box .lang_barWidht .lang_barList .bar_lines .barLineWrite .progress-dark {
   background-color: #000;
+}
+.language_box .lang_barWidht .lang_barList .bar_lines .barLineWrite .progress-orange {
+  background-color: #FF6A4A;
+}
+.language_box .lang_barWidht .lang_barList .bar_lines .barLineWrite .progress-success {
+  background-color: #68FE20;
+}
+.language_box .lang_barWidht .lang_barList .bar_lines .barLineWrite .progress-warning {
+  background-color: #E2F000;
+}
+.language_box .lang_barWidht .lang_barList .bar_lines .barLineWrite .progress-gray {
+  background-color: #00B067;
 }
 
 /*# sourceMappingURL=style.css.map */
