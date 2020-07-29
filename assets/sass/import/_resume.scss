@@ -926,7 +926,95 @@
 }
 
 
+.circle__head {
+  .sub_head {
+  position: relative;
+  padding-left: 30px;
+  .icon {
+    font-size: em(40px);
+    vertical-align: middle;
+    position: relative;
+    margin-right: 10px;
+    &:before {
+      content: '';
+      width: 60px;
+      height: 60px;
+      @include position(absolute, -20px, null, null, -30px);
+      @include border-radius(100px);
+      text-align: center;
+      background-color: #c0392b;
+      // border: 2px solid #fff;
+      display: block;
+      z-index: 1;
+    }
+    .fa_icon {
+      z-index: 3;
+      position: relative;
+    }
+  }
+
+  font-size: em(20px);
+  text-transform: uppercase;
+  color: #000;
+  text-align: left;
+  position: relative;
+  display: block;
+  margin-bottom: 5px;
+}
+
+}
+
+.card-box {
+  padding: 2rem;
+  background-color: #f8f9f9;
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
 // Language Bar
+.competency-card {
+  padding: 2rem;
+  background-color: #F8F9F9;
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+  .sub_head {
+    position: relative;
+    padding-left: 30px;
+    .icon {
+      font-size: em(40px);
+      vertical-align: middle;
+      position: relative;
+      margin-right: 10px;
+      &:before {
+        content: '';
+        width: 60px;
+        height: 60px;
+        @include position(absolute, -20px, null, null, -30px);
+        @include border-radius(100px);
+        text-align: center;
+        background-color: #c0392b;
+        // border: 2px solid #fff;
+        display: block;
+        z-index: 1;
+      }
+      .fa_icon {
+        z-index: 3;
+        position: relative;
+      }
+    }
+
+    font-size: em(20px);
+    text-transform: uppercase;
+    color: #000;
+    text-align: left;
+    position: relative;
+    display: block;
+    margin-bottom: 5px;
+  }
+}
 .language_box {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 1rem 1rem;
@@ -934,6 +1022,8 @@
   position: relative;
   display: block;
   margin-top: 30px;
+  background-color: #fff;
+  @include border-radius(0 20px 20px 0);
 
   .language_head {
     @include position(absolute, 0, null, 0, 0);
@@ -1041,6 +1131,90 @@
 
           .progress-gray {
             background-color: #00B067;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Project Cards
+.project-card {
+  .table_project {
+    .table {
+      background-color: #fff;
+      thead {
+        background-color:  #E42800;
+        tr {
+          th {
+            color: #fff;
+          }
+        }
+      }
+      tbody {
+        tr {
+          .inline_td {
+            width: 220px;
+            @include flexbox();
+            align-items: center;
+            .img_brand {
+              display: inline-block;
+              img {
+                width: 100px;
+                margin-left: 20px;
+              }
+            }
+            .text {
+              font-size: 13px;
+            }
+          }
+          td {
+            p {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Employment Cards
+.employment-card {
+  .table_project {
+    .table {
+      background-color: #fff;
+      thead {
+        background-color:  #E42800;
+        tr {
+          th {
+            color: #fff;
+          }
+        }
+      }
+      tbody {
+        tr {
+          vertical-align: middle;
+          .inline_td {
+            // width: 220px;
+            @include flexbox();
+            align-items: center;
+            .img_brand {
+              display: inline-block;
+              img {
+                width: 100px;
+                margin-left: 40px;
+              }
+            }
+            .text {
+              font-size: 15px;
+            }
+          }
+          td {
+            vertical-align: middle;
+            p {
+              font-size: 15px;
+            }
           }
         }
       }

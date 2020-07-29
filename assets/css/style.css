@@ -1835,6 +1835,97 @@ input, select {
     margin: 1em 4em 0 4em;
   }
 }
+.circle__head .sub_head {
+  position: relative;
+  padding-left: 30px;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  color: #000;
+  text-align: left;
+  position: relative;
+  display: block;
+  margin-bottom: 5px;
+}
+.circle__head .sub_head .icon {
+  font-size: 2.5em;
+  vertical-align: middle;
+  position: relative;
+  margin-right: 10px;
+}
+.circle__head .sub_head .icon:before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: -20px;
+  left: -30px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+  text-align: center;
+  background-color: #c0392b;
+  display: block;
+  z-index: 1;
+}
+.circle__head .sub_head .icon .fa_icon {
+  z-index: 3;
+  position: relative;
+}
+
+.card-box {
+  padding: 2rem;
+  background-color: #f8f9f9;
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.competency-card {
+  padding: 2rem;
+  background-color: #F8F9F9;
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.competency-card .sub_head {
+  position: relative;
+  padding-left: 30px;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  color: #000;
+  text-align: left;
+  position: relative;
+  display: block;
+  margin-bottom: 5px;
+}
+.competency-card .sub_head .icon {
+  font-size: 2.5em;
+  vertical-align: middle;
+  position: relative;
+  margin-right: 10px;
+}
+.competency-card .sub_head .icon:before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: -20px;
+  left: -30px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+  text-align: center;
+  background-color: #c0392b;
+  display: block;
+  z-index: 1;
+}
+.competency-card .sub_head .icon .fa_icon {
+  z-index: 3;
+  position: relative;
+}
+
 .language_box {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 1rem 1rem;
@@ -1842,6 +1933,12 @@ input, select {
   position: relative;
   display: block;
   margin-top: 30px;
+  background-color: #fff;
+  -webkit-border-radius: 0 20px 20px 0;
+  -moz-border-radius: 0 20px 20px 0;
+  -ms-border-radius: 0 20px 20px 0;
+  -o-border-radius: 0 20px 20px 0;
+  border-radius: 0 20px 20px 0;
 }
 .language_box .language_head {
   position: absolute;
@@ -1962,6 +2059,73 @@ input, select {
 }
 .language_box .lang_barWidht .lang_barList .bar_lines .barLineWrite .progress-gray {
   background-color: #00B067;
+}
+
+.project-card .table_project .table {
+  background-color: #fff;
+}
+.project-card .table_project .table thead {
+  background-color: #E42800;
+}
+.project-card .table_project .table thead tr th {
+  color: #fff;
+}
+.project-card .table_project .table tbody tr .inline_td {
+  width: 220px;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  display: flex;
+  align-items: center;
+}
+.project-card .table_project .table tbody tr .inline_td .img_brand {
+  display: inline-block;
+}
+.project-card .table_project .table tbody tr .inline_td .img_brand img {
+  width: 100px;
+  margin-left: 20px;
+}
+.project-card .table_project .table tbody tr .inline_td .text {
+  font-size: 13px;
+}
+.project-card .table_project .table tbody tr td p {
+  font-size: 13px;
+}
+
+.employment-card .table_project .table {
+  background-color: #fff;
+}
+.employment-card .table_project .table thead {
+  background-color: #E42800;
+}
+.employment-card .table_project .table thead tr th {
+  color: #fff;
+}
+.employment-card .table_project .table tbody tr {
+  vertical-align: middle;
+}
+.employment-card .table_project .table tbody tr .inline_td {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  display: flex;
+  align-items: center;
+}
+.employment-card .table_project .table tbody tr .inline_td .img_brand {
+  display: inline-block;
+}
+.employment-card .table_project .table tbody tr .inline_td .img_brand img {
+  width: 100px;
+  margin-left: 40px;
+}
+.employment-card .table_project .table tbody tr .inline_td .text {
+  font-size: 15px;
+}
+.employment-card .table_project .table tbody tr td {
+  vertical-align: middle;
+}
+.employment-card .table_project .table tbody tr td p {
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
